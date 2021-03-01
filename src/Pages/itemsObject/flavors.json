@@ -1,0 +1,30 @@
+[
+    {
+        "dish": "Birria de Res",
+        "description": "Carne de res desmechada marinada en hiervas frescas y cerveza."
+    },
+    {
+        "dish": "Ranchera",
+        "description": "Carne de res secada al sol y asada a la parrilla."
+    },
+    {
+        "dish": "Cochinita Pibill",
+        "description": "Carne de cerdo marinada en cítricos, cocinada a fuego lento en hojas de bijao."
+    },
+    {
+        "dish": "Cerdo al Pastor",
+        "description": "Carne de cerdo marinada en achiote , preparada a la plancha y acompañada con piña asada."
+    },
+    {
+        "dish": "Pollo al Chipotle",
+        "description": "Pechuga desmechada bañada en salsa chipotle no picante."
+    },
+    {
+        "dish": "Pollo BBQ",
+        "description": "Pollo a la parrilla, marinado en salsa BBQ"
+    },
+    {
+        "dish": "Vegetariano",
+        "description": "Champiñones y verduras salteadas."
+    }
+]

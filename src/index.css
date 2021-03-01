@@ -1,0 +1,24 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 62.5%; */
+}
+
+:root {
+  --primary-color: #E8723E;
+  --secondary-color: #6C3C24;
+  --tertiary-color: #FBBB3B;
+  --quaternary: #0000;
+}
+
+body {
+  min-height: 100vh;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

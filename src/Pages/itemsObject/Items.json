@@ -1,0 +1,123 @@
+{   "general": [
+        {
+            "name": "Entradas",
+            "category": "appetizers",
+            "url": "https://i.imgur.com/VQHZKYz.png"
+        },
+        {
+            "name": "Favoritos",
+            "category": "favorites",
+            "url": "https://i.imgur.com/fVJgPfJ.png"
+        },
+        {
+            "name": "Bebidas",
+            "category": "beverages",
+            "url": "https://i.imgur.com/4fqnejF.png"
+        }
+      ], 
+    "favorites": [
+        {
+            "id": "fav0",
+            "url": "https://i.imgur.com/fVJgPfJ.png",
+            "dish": "Tacos",
+            "description": "Tortilla de maíz con frijol refrito, proteína al gusto, cebolla y cilantro.",
+            "price": 4000
+        },
+        {
+            "id": "fav1",
+            "url": "https://i.imgur.com/wx7vcZw.png",
+            "dish": "Burritos",
+            "description": "Tortilla de trigo con frijol refrito, proteína al gusto, queso mozzarella, pico de gallo y salsa de la casa.",
+            "price": 7000
+        },
+        {
+            "id": "fav2",
+            "url": "https://i.imgur.com/JNaAy0W.png",
+            "dish": "Gringas",
+            "description": "Quesadilla de tortillas de trigo acompañadas de frijol refrito, queso Mozarela y proteína al gusto",
+            "price": 8000
+        },
+        {
+            "id": "fav3",
+            "url": "https://i.imgur.com/7ffukA9.png",
+            "dish": "Nachos",
+            "description": "Bandeja de chips de maíz, acompañados de frijol refrito, cheddar, cebolla, queso mozarela y proteína al gusto",
+            "price": 10000
+        },
+        {
+            "id": "fav4",
+            "url": "https://i.imgur.com/TuzLkyV.png",
+            "dish": "Sandwich",
+            "description": "Proteína al gusto, frijol refrito, queso mozarela, salsa ya merito, verduras.",
+            "price": 7000
+        }
+    ],
+
+    "appetizers": [
+        {
+            "id": "appet0",
+            "url": "https://i.imgur.com/VQHZKYz.png",
+            "dish": "Totopos",
+            "description": "Chips de maíz acompañados de salsa chedar y frijol refrito",
+            "price": 4000
+        },
+        {
+            "id": "appet1",
+            "url": "https://i.imgur.com/zdXJk8o.png",
+            "dish": "Quesadillas dulces ",
+            "description": "Tortillas de trigo rellenas con queso mozarela y dulce 'arequipe-mora o chocolate'",
+            "price": 3500
+        },
+        {
+            "id": "appet2",
+            "url": "https://i.imgur.com/zdXJk8o.png",
+            "dish": "Quesadilla con fruta",
+            "description": "Tortillas de trigo rellenas con Fresas o banano, queso mozarela y dulce 'arequipe-mora o chocolate'",
+            "price": 5500
+        },
+        {
+            "id": "appet3",
+            "url": "https://i.imgur.com/lEXk9D9.png",
+            "dish": "Quesadilla con fruta y helado",
+            "description": "Tortillas de trigo rellenas con Fresas o banano, helado, queso mozarela y dulce 'arequipe-mora o chocolate'",
+            "price": 7000
+        }
+    ]  ,
+    "beverages": [
+        {
+            "id": "bev0",
+            "url": "https://i.imgur.com/4fqnejF.png",
+            "dish": "Agua de Jamaica",
+            "description": "",
+            "price": 3000
+        },
+        {
+            "id": "bev1",
+            "url": "https://i.imgur.com/0nVaqhi.png",
+            "dish": "Agua de Tamarindo",
+            "description": "",
+            "price": 3000
+        },
+        {
+            "id": "bev2",
+            "url": "https://i.imgur.com/BYg3ndl.png",
+            "dish": "Cerveza Club Colombia",
+            "description": "",
+            "price": 4000
+        },
+        {
+            "id": "bev3",
+            "url": "https://i.imgur.com/KMpJzFy.png",
+            "dish": "Cerveza Corona",
+            "description": "",
+            "price": 5500
+        },
+        {
+            "id": "bev4",
+            "url": "https://i.imgur.com/3jRq1Fj.png",
+            "dish": "Productos Cocacola",
+            "description": "",
+            "price": 2500
+        }
+    ]
+}
