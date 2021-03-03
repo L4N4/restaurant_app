@@ -5,14 +5,17 @@ import MenuStyle from "../Components/MenuStyle";
 
 
 function Menu() {
-  const { items, cart, increase, decrease } = useContext(Contxt);
+  const { items, cart, increase, decrease, increaseFl, decreaseFl, meats } = useContext(Contxt);
 
   const [list, setList] = React.useState(items.favorites);
   // const [search, setSearch] = React.useState("");
   // let filteredList = favList;
+  const [category, setCategory] = React.useState("favorites")
 
   function clickCategories(e) {
     setList(items[e.target.dataset.category]);
+    setCategory(e.target.dataset.category)
+    console.log(items.general)
   }
 
   function handleChange(e) {
@@ -38,6 +41,7 @@ function Menu() {
   return(
     <MenuStyle
       handleChange={handleChange}
+      category={category}
       categories={items.general}
       clickCategories={clickCategories}
       list={list}
@@ -45,6 +49,10 @@ function Menu() {
       decrease={decrease}
       amount={cart}
       totalAmount={totalItems}
+      items={items}
+      increaseFl={increaseFl}
+      decreaseFl={decreaseFl}
+      meats={meats}
     />
   )
 }

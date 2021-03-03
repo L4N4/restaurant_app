@@ -33,12 +33,6 @@ function OrderStyle(props) {
                   <p>$ {item.price}</p>
                   <p>{props.cartValues[idx]}</p>
                 </div>
-                <div className="button button-left" onClick={props.decrease} data-product={item.id}>
-                  <div className="circle" data-product={item.id}>-</div>
-                </div>
-                <div className="button button-right" onClick={props.increase} data-product={item.id}>
-                  <div className="circle" data-product={item.id}>+</div>
-                </div>
               </article>
             </div>
           )

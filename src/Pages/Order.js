@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 
 import { Contxt } from "../Components/ShoppingCart";
 import OrderStyle from "../Components/OrderStyle";
 
 function Order() {
-  const { items, cart, increase, decrease } = useContext(Contxt);
+  const { items, cart, meats } = useContext(Contxt);
   
   let keys = [];
   let values = [];
@@ -16,13 +16,55 @@ function Order() {
     }
   });
 
+  // let flavors = []
+
+  // const idProducts = items.favorites
+  //   .concat(items.appetizers)
+  //   .concat(items.beverages)
+  //   .map((e) => e = e.id)
+  // ;
+
+  // let flavrs = {};
+
+  // const [flavors, setFlavors] = useState({})
+
+  // const updateFlavors = () =>{
+
+  //   for (let i of keys) {  
+  //     for (const id in meats) {
+  //       if(meats[i] == meats[id]) {
+  //         for(const flav in meats[id]) {
+  //           if(meats[id][flav].quantity !== 0){
+  //             setFlavors(
+  //               {
+  //                 ...flavors,
+  //                 [i]: {[flav]: meats[id][flav].quantity}
+  //               }
+  //             ) 
+  //           }
+  //         }
+  //       }
+          
+  //       }
+    
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   updateFlavors()
+  // }, [])
+
   let shoppingList = [];
 
   Object.keys(items).forEach(category => {
     items[category].forEach((item, idx) => {
       keys.forEach(key => {
         if (key === items[category][idx].id) {
-          shoppingList.push(items[category][idx]);
+          // meats[key].forEach(flav => {
+          //   if(flav.quantity != 0) {
+             shoppingList.push(items[category][idx]);
+          //   }
+          // })
         }
       })
     });
@@ -43,23 +85,29 @@ function Order() {
     `);
   });
 
+  console.log(shoppingList)
+  console.log(keys)
+  console.log(values)
+  console.log(meats)
+  // console.log(flavors)
+
   const message = `Nuevo pedido:
   
-  ${request.join(`
-  `)}
+    ${request.join(`
+    `)}
   `;
 
   return (
     <OrderStyle
       cartValues={values}
       shoppingList={shoppingList}
-      increase={increase}
-      decrease={decrease}
       phone={phone}
       message={message}
       total={total}
+      meats={meats}
+      // flavors={flavors}
     />
   )
 }
 
-export default Order;
+export default Order
