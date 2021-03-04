@@ -131,10 +131,9 @@ function ShoppingCart(props) {
     let flavorEl = {}
     for (let fl of flavors){
         flavorEl = Object.assign (flavorEl, {
-            [fl.dish]: {
-                quantity: 0
+            [fl.dish]: 0
             }
-        })
+        )
     }
     
     let initialStateMeats = {};
@@ -151,21 +150,19 @@ function ShoppingCart(props) {
     setMeats(prevMeats => ({
       ...prevMeats,
       [idFav]:{ ...prevMeats[idFav],
-          [e.target.dataset.product]: {
-              quantity: meats[idFav][e.target.dataset.product].quantity + 1,
-          }
+          [e.target.dataset.product]: meats[idFav][e.target.dataset.product] + 1,
+          
       }
     }));
   }
 
   const decreaseFl = (e, idFav) => {
-    if(meats[idFav][e.target.dataset.product].quantity > 0) {
+    if(meats[idFav][e.target.dataset.product] > 0) {
         setMeats(prevMeats => ({
             ...prevMeats,
             [idFav]:{ ...prevMeats[idFav],
-                [e.target.dataset.product]: {
-                    quantity: meats[idFav][e.target.dataset.product].quantity - 1,
-                }
+                [e.target.dataset.product]: meats[idFav][e.target.dataset.product] - 1,
+                
             }
           }))
     }

@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.modalList {
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.modalList .title {
+  position: absolute;
+  top: 35px;
+  right: 20%;
+  margin: auto;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
+  font-weight: 700;
+}
+
+.modalList .title h1 {
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+
+.modalList .title i {
+  transform: scale(2);
+  color: var(--tertiary-color);
+}
+
+/*-----------------Alert Message----------------*/
+.modalList .message-container {
+  height: 33%;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 15px;
+}
+
+.modalList .message {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5px;
+  box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.4);
+  border-radius: 12px;
+}
+
+.modalList .message h1 {
+  color: var(--primary-color);
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modalList .message p {
+  padding: 5px;
+  font-size: medium;
+  font-weight: 500;
+}
+
+/*-------------Articles shopping Cart-------------*/
+.modalList .articles {
+  height: 39%;
+  overflow-y: scroll;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; */
+  align-items: center;
+}
+
+.modalList .article-container {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modalList .articles article {
+  position: relative;
+  height: 80px;
+  width: 70%;
+  margin-bottom: 15px;
+  transform: translateX(20px);
+  background-color: rgb(233, 220, 145);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.modalList .articles article .contents {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 40px 0 40px;
+}
+
+.modalList .articles article .contents p:nth-of-type(1) {
+  font-size: 14px;
+  color: var(--color-sombra-oscura-cian);
+}
+
+.modalList .articles article .contents p:nth-of-type(2) {
+  font-weight: bold;
+}
+
+.modalList .articles article .contents p:last-child {
+  position: absolute;
+  right: 0%;
+  width: 35px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* .shopping-cart .articles article .contents p:last-child {
+  position: absolute;
+  right: 0%;
+  width: 35px;
+  font-size: 20px;
+} */
+
+.modalList .articles article figure {
+  position: absolute;
+  left: -40px;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f5f5f5;
+}
+
+.modalList .articles article .button {
+  position: absolute;
+  cursor: pointer;
+}
+
+.modalList .articles article .circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.modalList .articles article .button-left {
+  right: 5px;
+  bottom: 2px;
+}
+
+.modalList .articles article .button-right {
+  right: 5px;
+  top: 2px;
+}
+
+/*-------------------Resume-------------------*/
+.modalList .resume {
+  height: 28%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.modalList .resume div a {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+.modalList .resume div:first-child a {
+  width: 60%;
+  background-color: var(--tertiary-color);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.modalList .resume div a p {
+  text-align: center;
+  padding: 10px;
+}
+
+.modalList .resume > div:nth-of-type(2) .row {
+  width: 80%;
+  margin: auto;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalList .resume > div:nth-of-type(2) .row:last-child {
+  font-weight: bold;
+}
+
+.modalList .resume div:last-child a {
+  width: 70%;
+  background-color: var(--primary-color);
+  font-size: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modalList .resume div:last-child a i {
+  transform: scale(1.5);
+}

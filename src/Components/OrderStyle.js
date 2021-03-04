@@ -29,7 +29,12 @@ function OrderStyle(props) {
                 <figure style={{backgroundImage: `url('${item.url}')`}}></figure>
                 <div className="contents">
                   <h4>{item.dish}</h4>
-                  <p>espacio para sabores</p>
+                  
+                  {props.listSelected[idx].map((e, j)=> {
+                    return(
+                      <p>{`${Object.keys(e)} ${Object.values(e)}`}</p>
+                    )
+                  })}
                   <p>$ {item.price}</p>
                   <p>{props.cartValues[idx]}</p>
                 </div>

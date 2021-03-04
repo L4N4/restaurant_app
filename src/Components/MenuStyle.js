@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CheckList from "./CheckList";
-import flavors from "../Pages/itemsObject/flavors.json"
+// import flavors from "../Pages/itemsObject/flavors.json"
 
 import "./Styles/MenuStyle.css";
+import ModalList from "./ModalList";
 
 function MenuStyle(props) {
 
 
-   //--------------- List of meats------------------
+//--------------- List of meats------------------
 
   // const idFavorites = props.items.favorites.map((e) => e = e.id)
 
@@ -94,7 +94,7 @@ function MenuStyle(props) {
                 <h4>{e.dish}</h4>
                 <p>{e.description}</p>
                 { props.category == "favorites" &&
-                  <CheckList idFav={e.id} increaseFl={props.increaseFl} decreaseFl={props.decreaseFl} meats={props.meats} />
+                  <ModalList idFav={e.id} increaseFl={props.increaseFl} decreaseFl={props.decreaseFl} meats={props.meats} />
                 }
                   
                 <p>$ {e.price}</p>
