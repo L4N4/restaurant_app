@@ -1,60 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import flavors from "../Pages/itemsObject/flavors.json"
 
 import "./Styles/MenuStyle.css";
 import ModalList from "./ModalList";
 
 function MenuStyle(props) {
-
-
-//--------------- List of meats------------------
-
-  // const idFavorites = props.items.favorites.map((e) => e = e.id)
-
-  //   let flavorEl = {}
-  //   for (let fl of flavors){
-  //       flavorEl = Object.assign (flavorEl, {
-  //           [fl.dish]: {
-  //               quantity: 0
-  //           }
-  //       })
-  //   }
-    
-  //   let initialStateMeats = {};
-  //   for (let i of idFavorites) {
-  //       initialStateMeats[i] = flavorEl
-  //   }
-
-  // const [meats, setMeats] = React.useState(initialStateMeats);
-
-  // const increaseFl = e => {
-  //   console.log(e.target.dataset.product)
-  //   console.log(meats[props.list.id][e.target.dataset.product].quantity)
-    
-  //   setMeats(prevMeats => ({
-  //     ...prevMeats,
-  //     [props.list.id]:{ ...prevMeats[props.list.id],
-  //         [e.target.dataset.product]: {
-  //             quantity: meats[props.list.id][e.target.dataset.product].quantity + 1,
-  //         }
-  //     }
-  //   }));
-  // }
-
-  // const decreaseFl = e => {
-  //   if(meats[props.list.id][e.target.dataset.product].quantity > 0) {
-  //       setMeats(prevMeats => ({
-  //           ...prevMeats,
-  //           [props.list.id]:{ ...prevMeats[props.list.id],
-  //               [e.target.dataset.product]: {
-  //                   quantity: meats[props.list.id][e.target.dataset.product].quantity - 1,
-  //               }
-  //           }
-  //         }))
-  //   }
-  // }
-
 
   return (
     <section className="menu">

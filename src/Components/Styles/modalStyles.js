@@ -3,7 +3,7 @@ export default {
     title: {
         position: 'absolute',
         top: '20px',
-        right: '20%',
+        left: '20%',
         margin: 'auto',
         width: '40%',
         display: 'flex',
@@ -20,14 +20,15 @@ export default {
 
 
     /*-------------Articles shopping Cart-------------*/
-    //   articles: {
-    //     height: '39%',
-    //     overflowY: 'scroll',
-    //     /* display: flex,
-    //     flex-direction: column,
-    //     justify-content: space-evenly, */
-    //     alignItems: 'center',
-    //   },
+    articles: {
+        height: '35%',
+        overflowY: 'scroll',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+        marginTop: '40px'
+    },
 
     articleContainer: {
         margin: 'auto',
@@ -36,16 +37,15 @@ export default {
         justifyContent: 'center'
     },
 
-    //   .modalList .articles article {
-    //     position: relative,
-    //     height: 80px,
-    //     width: 70%,
-    //     margin-bottom: 15px,
-    //     transform: translateX(20px),
-    //     background-color: rgb(233, 220, 145),
-    //     border-radius: 12px,
-    //     text-align: center,
-    //   }
+    article: {
+        position: 'relative',
+        height: '90px',
+        width: '100%',
+        marginBottom: '15px',
+        backgroundColor: 'rgb(233, 220, 145)',
+        borderRadius: '12px',
+        textAlign: 'center'
+    },
 
     contents: {
         height: '100%',
@@ -56,26 +56,16 @@ export default {
     },
 
     h4: {
-        fontSize: '14px',
+        fontSize: '15px',
         color: 'var(--color-sombra-oscura-cian)'
-    },
-
-    p1: {
-        fontWeight: 'bold',
     },
 
     p2: {
         position: 'absolute',
         right: '0%',
         width: '35px',
-        fontSize: '16px',
+        fontSize: '14px',
         fontWeight: 'bold'
-    },
-
-
-    button: {
-        position: 'absolute',
-        cursor: 'pointer'
     },
 
     circle: {
@@ -92,12 +82,16 @@ export default {
 
     buttonLeft: {
         right: '5px',
-        bottom: '2px'
+        bottom: '2px',
+        position: 'absolute',
+        cursor: 'pointer'
     },
 
     buttonRight: {
         right: '5px',
-        top: '2px'
+        top: '2px',
+        position: 'absolute',
+        cursor: 'pointer'
     }
 
 }
