@@ -87,15 +87,13 @@ function Order() {
         return (
           request.push(`Producto ${idx + 1}
           ${item.dish}: ${values[idx]}
-          Sabor(es): ${Object.keys(e)} ${Object.values(e)}
-          descripcion: ${item.description}//
+          Sabor(es): ${Object.keys(e)} ${Object.values(e)}//
           `)
         )
       })
     }
     request.push(`Producto ${idx + 1}
-      ${item.dish}: ${values[idx]}
-      descripcion: ${item.description}//
+      ${item.dish}: ${values[idx]}//
     `);
   });
 
