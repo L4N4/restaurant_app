@@ -16,55 +16,13 @@ function Order() {
     }
   });
 
-  // let flavors = []
-
-  // const idProducts = items.favorites
-  //   .concat(items.appetizers)
-  //   .concat(items.beverages)
-  //   .map((e) => e = e.id)
-  // ;
-
-  // let flavrs = {};
-
-  // const [flavors, setFlavors] = useState({})
-
-  // const updateFlavors = () =>{
-
-  //   for (let i of keys) {  
-  //     for (const id in meats) {
-  //       if(meats[i] == meats[id]) {
-  //         for(const flav in meats[id]) {
-  //           if(meats[id][flav].quantity !== 0){
-  //             setFlavors(
-  //               {
-  //                 ...flavors,
-  //                 [i]: {[flav]: meats[id][flav].quantity}
-  //               }
-  //             ) 
-  //           }
-  //         }
-  //       }
-
-  //       }
-
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   updateFlavors()
-  // }, [])
-
   let shoppingList = [];
 
   Object.keys(items).forEach(category => {
     items[category].forEach((item, idx) => {
       keys.forEach(key => {
         if (key === items[category][idx].id) {
-          // meats[key].forEach(flav => {
-          //   if(flav.quantity != 0) {
           shoppingList.push(items[category][idx]);
-          //   }
-          // })
         }
       })
     });
@@ -78,17 +36,10 @@ function Order() {
   const phone = 573202383981;
   const request = [];
 
-  shoppingList.forEach((item, idx) => {
-    request.push(`Producto ${idx + 1}
-      ${item.name}: ${values[idx]}
-      descripcion: ${item.description}//
-    `);
-  });
-
+  
   console.log(shoppingList)
   console.log(keys)
   console.log(values)
-  console.log(meats.fav0)
 
   const productos = Object.values(meats)
 
@@ -100,10 +51,6 @@ function Order() {
   productos.forEach(producto => {
     llaves.push(Object.keys(producto))
     valores.push(Object.values(producto))
-
-
-    console.log(producto)
-    console.log(producto)
   })
 
   let listSelected = []
@@ -131,6 +78,18 @@ function Order() {
   console.log(llaves)
   console.log(listSelected)
 
+  shoppingList.forEach((item, idx) => {
+    let flav = listSelected[idx].map(e=> {
+      return(
+        `${Object.keys(e)} ${Object.values(e)}`
+      )
+          });
+    request.push(`Producto ${idx + 1}
+      ${item.dish}: ${values[idx]}
+      Sabores: ${flav}
+      descripcion: ${item.description}//
+    `);
+  });
 
 
 
@@ -141,6 +100,9 @@ function Order() {
     `)}
   `;
 
+
+  console.log(request)
+
   return (
     <OrderStyle
       cartValues={values}
@@ -150,7 +112,6 @@ function Order() {
       total={total}
       meats={meats}
       listSelected={listSelected}
-    // flavors={flavors}
     />
   )
 }

@@ -30,11 +30,14 @@ function OrderStyle(props) {
                 <div className="contents">
                   <h4>{item.dish}</h4>
                   
-                  {props.listSelected[idx].map((e, j)=> {
+                  {item.id == "fav0" || item.id == "fav1" || item.id == "fav2" || item.id == "fav3" ?
+                    props.listSelected[idx].map((e)=> {
                     return(
                       <p>{`${Object.keys(e)} ${Object.values(e)}`}</p>
                     )
-                  })}
+                        }
+                    ) : false
+                  }
                   <p>$ {item.price}</p>
                   <p>{props.cartValues[idx]}</p>
                 </div>

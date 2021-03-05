@@ -98,9 +98,6 @@
   color: var(--color-sombra-oscura-cian);
 }
 
-.order .articles article .contents p:nth-of-type(2) {
-  font-weight: bold;
-}
 
 .order .articles article .contents p:last-child {
   position: absolute;
