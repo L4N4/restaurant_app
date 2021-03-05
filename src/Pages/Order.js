@@ -17,6 +17,7 @@ function Order() {
   });
 
   let shoppingList = [];
+  console.log(items)
 
   Object.keys(items).forEach(category => {
     items[category].forEach((item, idx) => {
@@ -36,7 +37,7 @@ function Order() {
   const phone = 573202383981;
   const request = [];
 
-  
+
   console.log(shoppingList)
   console.log(keys)
   console.log(values)
@@ -70,25 +71,30 @@ function Order() {
         }
       })
       listSelected.push(counter)
-      counter=[]
+      counter = []
     }
   })
   console.log(counter)
   console.log(valores)
   console.log(llaves)
   console.log(listSelected)
-  let flav= "";
+
+  let flav = "";
+
   shoppingList.forEach((item, idx) => {
-    if (item.id == "fav0" || item.id == "fav1" || item.id == "fav2" || item.id == "fav3"){
-     flav = listSelected[idx].map(e=> {
-      return(
-        `${Object.keys(e)} ${Object.values(e)}`
-      )
-          });
-        }
+    if (item.id == "fav0" || item.id == "fav1" || item.id == "fav2" || item.id == "fav3") {
+      listSelected[idx].map(e => {
+        return (
+          request.push(`Producto ${idx + 1}
+          ${item.dish}: ${values[idx]}
+          Sabor(es): ${Object.keys(e)} ${Object.values(e)}
+          descripcion: ${item.description}//
+          `)
+        )
+      })
+    }
     request.push(`Producto ${idx + 1}
       ${item.dish}: ${values[idx]}
-      ${flav}
       descripcion: ${item.description}//
     `);
   });
