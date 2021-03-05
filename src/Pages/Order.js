@@ -77,21 +77,21 @@ function Order() {
   console.log(valores)
   console.log(llaves)
   console.log(listSelected)
-
+  let flav= "";
   shoppingList.forEach((item, idx) => {
-    let flav = listSelected[idx].map(e=> {
+    if (item.id == "fav0" || item.id == "fav1" || item.id == "fav2" || item.id == "fav3"){
+     flav = listSelected[idx].map(e=> {
       return(
         `${Object.keys(e)} ${Object.values(e)}`
       )
           });
+        }
     request.push(`Producto ${idx + 1}
       ${item.dish}: ${values[idx]}
-      Sabores: ${flav}
+      ${flav}
       descripcion: ${item.description}//
     `);
   });
-
-
 
 
   const message = `Nuevo pedido:
