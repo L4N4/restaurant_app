@@ -8,6 +8,7 @@ Menú virtual interactivo del restaurante de comida mexicana Ya Merito, el cual 
 
 - Para descargar el código de este proyecto, use el siguiente comando desde la consola: git clone https://github.com/L4N4/restaurant_app.git.
 - Para desplegarlo de manera local, se deben descargar las dependencias, ubicado dentro de la carpeta, usando el comando: npm install.
+- Instalar las dependencias de React Router para enlazar los componentes, con el comando: npm install react-router-dom.
 - A continuación usar el comando: npm start
 
 
