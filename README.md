@@ -14,7 +14,8 @@ Menú virtual interactivo del restaurante de comida mexicana Ya Merito, el cual 
 
 ## Deployment
 
-Este proyecto fue desplegado usando la página web Netlify (www.netlify.com). Para desplegar los cambios realizados en el proyecto, basta con subirlos a GitHub.
+Este proyecto fue desplegado usando la página web Netlify (www.netlify.com): https://dreamy-goldstine-8a0b77.netlify.app/.
+Para desplegar los cambios realizados en el proyecto, basta con subirlos a GitHub.
 
 ## Built With
 
